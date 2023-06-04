@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develper_Jay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1125px) " href="small-screen.css">
+    <script src="https://kit.fontawesome.com/40fbcd9c2b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- --------------------header----------------------- -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>D</span>ev.<span>J</span>ay</h1>
+                <ul>
+                    <li><a onclick="closemenu()" href="#header" class="items" id="item1">Home</a></li>
+                    <li><a onclick="closemenu()" href="#about" class="items" id="item3">About me</a></li>
+                    <li><a onclick="closemenu()" href="#services" class="items" id="item2">Services</a></li>
+                    <li><a onclick="closemenu()" href="#mywork" class="items" id="item4">My Work</a></li>
+                    <li><a onclick="closemenu()" href="#contact-me" class="items" id="item4">Contact me</a></li>
+                    <i id="close-button" onclick="closemenu()" class="fa-sharp fa-solid fa-circle-xmark"></i>
+                </ul>
+                <i onclick="openmenu()" class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-End Developer</p>
+                <h1>Hi, I'm <span>Jayachandra B.</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about--------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="col-1">
+                <img src="dp.jpg" alt="">
+            </div>
+            <div class="col-2">
+                <h1>About Me</h1>
+                <p>Passionate front-end web developer creating stunning, user-centric experiences. Combining creativity
+                    and technical expertise to bring your digital vision to life. Let's collaborate and make an impact.
+                </p>
+
+                <div class="tab-tiltes">
+                    <p class="tab-links active" onclick="opentab('tech-stack')">Tech Stack</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div id="tech-stack" class="tab-content active">
+                    <div class="stack-1">
+                        <ul>
+                            <li><span>Front-End Web Development</span><br><i class="fa-solid fa-star"></i> HTML <br><i class="fa-solid fa-star"></i> CSS <br> <i class="fa-solid fa-star"></i> JavaScript
+                                <br><i class="fa-solid fa-star"></i> BootStrap
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="stack-2">
+                        <ul>
+                            <li><span>Languages</span><br><i class="fa-solid fa-star"></i> Python <br><i class="fa-solid fa-star"></i> Java <br> <i class="fa-solid fa-star"></i> C language </li>
+                        </ul>
+                    </div>
+                    <div class="stack-3">
+                        <ul>
+                            <li><span>Databases</span><br><i class="fa-solid fa-star"></i> MySQL <br><i class="fa-solid fa-star"></i> PostgresSQL <br> <i class="fa-solid fa-star"></i> MongoDB </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="education">
+                    <div class="stack-1">
+                        <ul>
+                            <li><span>Intermediate Education</span> <br><span>2019 - 2021</span> <br> Sainik School
+                                Kalikiri <br><span>MPC<br>Computer Science</span></li>
+                        </ul>
+                    </div>
+                    <div class="stack-2">
+                        <ul>
+                            <li><span>Bachelor's degree</span> <br><span>2011 - 2025</span> <br> Jawaharlal Nehru
+                                Technological University Anantapur <br><span>Computer Science and Engineering</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="experience">
+                    <div class="stack-1">
+                        <ul>
+                            <li><span>Feb 2022 - present</span><br>Freelancer on Fiverr</li>
+                        </ul>
+                    </div>
+                    <div class="stack-2">
+                        <ul>
+                            <li><span>May 2023 - present</span><br>Campus Ambassodor at Let'sUpgrade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------services----------------------->
+
+    <div id="services">
+        <h1>My Services</h1>
+        <div class="main-container">
+            <div class="cards">
+                <img src="web_development_service.png" alt="web development">
+                <h4>Web Development</h4>
+                <p>Designing, coding, and building exceptional websites for seamless digital experiences.</p>
+            </div>
+
+            <div class="cards">
+                <img src="mentoring_service.png" alt="mentoring">
+                <h4>Mentoring</h4>
+                <p>Guiding, inspiring, and empowering tech enthusiasts to unlock their full potential.</p>
+            </div>
+
+            <div class="cards">
+                <img src="problem_solving_service.jpeg" alt="problem solving">
+                <h4>Problem solving</h4>
+                <p>Analyzing, strategizing, and coding solutions to tackle complex programming challenges efficiently.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------my work------------------------ -->
+
+    <div id="mywork">
+        <h1 id="mywork-head">My Work</h1>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="age_calc.png" alt="age calculator">
+                    <div class="layer">
+                        <h3>Age calculator</h3>
+                        <p>A user-friendly age calculator that takes a birthdate input</p>
+                        <a href="https://github.com/devjay000/Simple-age-calculator"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="otp_form.png" alt="otp form">
+                    <div class="layer">
+                        <h3>OTP verification form</h3>
+                        <p>A clean and intuitive OTP verification form with a minimalistic design</p>
+                        <a href="https://github.com/devjay000/OTP-verification-form"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="login_form.png" alt="login form">
+                    <div class="layer">
+                        <h3>LogIn form</h3>
+                        <p>A sleek and user-friendly login form with a minimalist design, intuitive input fields</p>
+                        <a href="https://github.com/devjay000/pop-login-form"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/devjay000" class="btn">see more</a>
+    </div>
+
+    <!-- -----------------------contact me-------------------- -->
+
+    <div id="contact-me">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> developerjay000@gmail.com</p>
+                    <p><i class="fa fa-phone-volume">   </i> +91 7075442064</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/profile.php?id=100014580423300" target="_blank"> <i class="fa fa-facebook"></i> </a>
+                        <a href="https://twitter.com/devjay000"> <i class="fa fa-twitter"></i> </a>
+                        <a href="https://www.instagram.com/devjay000/"> <i class="fa fa-instagram"></i> </a>
+                        <a href="https://www.linkedin.com/in/jayachandra-b-20ab30221/"> <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Jayachandra_B_Resume.pdf" download class="btn-2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <input type="email" name="email" id="email" placeholder="Enter your mail">
+                        <textarea name="message" id="message" rows="6"></textarea>
+                        <button type="submit" class="btn-2 btn-3">Submit</button>
+                        <span id="success"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="year"></span> devjay000. All rights reserved </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var dyanamicyear = new Date().getFullYear();
+        let year = document.getElementById("year")
+        year.innerHTML = dyanamicyear
+        var tabcontent = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (i of tablinks) {
+                i.classList.remove("active");
+            }
+            for (i of tabcontent) {
+                i.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active");
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyi9bi4HA0vRhyNXjuj4mc8kH7eMpV5E4cQmduJ2j_Uw70dcUMY0yc-8kC5JeTLZs3d/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const success = document.getElementById("success")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            success.innerHTML="Messege sent successfully";
+            success.classList.add("active")
+            setTimeout(()=>{
+                success.innerHTML = "";
+                success.classList.remove("active")
+            },3000)
+            form.reset();
+        })
+        .catch(error => console.error('Error! rey', error.message))
+    })
+
+    let closebutton = document.getElementById("close-button")
+    let menu = document.querySelectorAll("nav ul");
+    let bt = document.querySelectorAll("nav>i");
+    function closemenu(){
+        menu[0].style.right = '-300px';
+        bt[0].style.visibility = "visible";
+    }
+    
+    function openmenu(){
+        menu[0].style.right = "0";
+        bt[0].style.visibility = "hidden";
+
+    }
+
+  </script>
+</body>
+
+</html>
