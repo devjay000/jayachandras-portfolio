@@ -28,8 +28,9 @@ nav ul{
     top: 0px;
     right: -300px;
     background-color: #ffffff;
+    color: #000000;
     height: 250vh;
-    line-height: 100px;
+    line-height: 50px;
     width: 300px;
     transition: right 0.5s;
 }
