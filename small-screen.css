@@ -26,12 +26,11 @@ nav ul{
     flex-direction: column;
     position: fixed;
     top: 0px;
-    right: -300px;
-    background-color: #ffffff;
-    color: #000000;
+    right: -250px;
+    background-color: #2e355d;
     height: 250vh;
     line-height: 50px;
-    width: 300px;
+    width: 250px;
     transition: right 0.5s;
 }
 
@@ -53,6 +52,10 @@ nav ul li a:hover::after{
 
 nav ul li:hover{
     transform: scale(1.1);
+}
+
+nav ul li a{
+    color: #f4f6fc;
 }
 
 .logo{
